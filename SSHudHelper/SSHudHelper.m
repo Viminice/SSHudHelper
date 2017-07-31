@@ -61,7 +61,6 @@
     self.container = view;
     self.hud.mode = MBProgressHUDModeText;
     self.hud.label.text = message;
-    self.hud.offset = CGPointMake(0.f, MBProgressMaxOffset);
     // 如果设置的持续时间就自动隐藏, 否则手动隐藏
     if (duration) {
         [self.hud hideAnimated:YES afterDelay:duration];
